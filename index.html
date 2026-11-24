@@ -1,7 +1,193 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Moh Ryan Trisyardi — The Business Intelligence World</title>
-<meta name="description" content="Interactive 3D CV of Moh Ryan Trisyardi: Accounting Supervisor, Financial Analyst, ERP developer.">
-<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/index-Dg08aPDl.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-ChLs6kUT.css">
-</head><body><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Moh Ryan Trisyardi — Professional Accountant</title>
+<meta name="description" content="Portfolio and CV of Moh Ryan Trisyardi, Professional Accountant.">
+<meta name="theme-color" content="#0f130b">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#E7B94F;--cream:#F4DDB5;--ink:#0f130b;--txt:#f6efdc;--mut:#c9bfa6;--dim:.5}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--ink);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.bgs{position:fixed;inset:0;transition:transform .5s ease-out;transform:translate(var(--px,0),var(--py,0))}
+.bg{position:absolute;inset:-3%;background:radial-gradient(ellipse at 30% 20%,#2f5d34,transparent 60%),radial-gradient(ellipse at 80% 80%,#6b4a1f,transparent 55%),#0f1d12;background-size:cover;background-position:center;opacity:0;transform:scale(1.1);transition:opacity 1.4s ease,transform 10s ease-out}
+.bg.on{opacity:1;transform:scale(1)}
+.scrim{position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(9,12,6,calc(var(--dim) + .3)),rgba(9,12,6,calc(var(--dim) * .45)) 52%,rgba(9,12,6,calc(var(--dim) + .25))),linear-gradient(180deg,rgba(9,12,6,.6),transparent 24%,transparent 68%,rgba(9,12,6,.75))}
+.top{position:fixed;inset:0 0 auto;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) clamp(14px,3vw,40px) 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 15px Inter;letter-spacing:.04em;width:230px}
+.brand span{text-shadow:0 2px 12px #000}
+nav{display:flex;gap:4px;padding:5px;border-radius:99px;background:rgba(14,18,10,.7);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.14)}
+nav button{display:flex;align-items:center;gap:8px;padding:9px 18px;border-radius:99px;font-weight:500;color:var(--mut);transition:.3s}
+nav button:hover{color:#fff}nav button.on{background:rgba(231,185,79,.16);color:var(--gold);box-shadow:inset 0 0 0 1px rgba(231,185,79,.55)}
+.mail{width:230px;display:flex;justify-content:flex-end}.mail a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(14,18,10,.7);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);transition:.3s}
+.mail a:hover{color:var(--gold);border-color:var(--gold)}
+.scene{position:fixed;inset:0;display:grid;align-items:center;gap:clamp(16px,3vw,56px);padding:calc(92px + env(safe-area-inset-top,0px)) clamp(16px,4vw,64px) 84px;opacity:0;visibility:hidden;transition:opacity .7s,visibility .7s}
+.scene.on{opacity:1;visibility:visible}
+.s0{grid-template-columns:minmax(0,1fr) minmax(340px,500px)}.s1{grid-template-columns:minmax(0,.8fr) minmax(360px,640px)}.s2{grid-template-columns:minmax(260px,380px) minmax(0,1fr)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease;transition-delay:calc(var(--i,0) * 90ms + 300ms)}
+.on .rv{opacity:1;transform:none}
+.lbl{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.08;text-shadow:0 3px 24px rgba(0,0,0,.6)}
+h1{font-size:clamp(2.4rem,5.4vw,4.8rem);margin:.3em 0 .1em}h2{font-size:clamp(2rem,3.6vw,3.2rem);margin:.25em 0 .2em}
+.gold{color:var(--gold)}.ttl{font:500 clamp(1rem,1.6vw,1.3rem)/1.3 Inter;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-shadow:0 2px 12px #000}
+.hero p{max-width:34em;color:#efe6cf;text-shadow:0 2px 14px rgba(0,0,0,.8)}.hero .tag{margin:18px 0}
+.quote{margin:22px 0;padding-left:16px;border-left:2px solid var(--gold);font-style:italic;max-width:30em;color:var(--cream)}
+.cta{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:13px 24px;border-radius:99px;background:linear-gradient(135deg,#f3d27a,#d9a441);color:#1b1508;font-weight:600;box-shadow:0 10px 30px rgba(231,185,79,.28);transition:transform .3s,box-shadow .3s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(231,185,79,.42)}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin:22px 0}.stats b{display:block;font:600 2rem 'Playfair Display';color:var(--gold)}.stats small{color:var(--mut);font-size:.8rem}
+.panel{max-height:calc(100dvh - 180px);overflow:auto;padding:28px 30px;border-radius:24px;background:rgba(12,16,8,.76);backdrop-filter:blur(20px) saturate(1.1);border:1px solid rgba(231,185,79,.22);box-shadow:0 24px 70px rgba(0,0,0,.5);scrollbar-width:thin;scrollbar-color:rgba(231,185,79,.4) transparent}
+.panel section+section{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
+.panel h3{display:flex;align-items:center;gap:10px;margin-bottom:12px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.panel p,.panel li{color:#f1e9d4}
+.facts{display:grid;gap:12px}.facts li{display:flex;gap:12px;align-items:flex-start;list-style:none}.facts .ic{color:var(--gold);margin-top:3px;flex:none}.facts small{display:block;color:var(--mut);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}.chips li{padding:6px 14px;border-radius:99px;background:rgba(231,185,79,.12);border:1px solid rgba(231,185,79,.3);font-size:.9rem}
+.bar{margin:12px 0}.bar div{display:flex;justify-content:space-between;font-size:.92rem}.bar i{display:block;height:6px;margin-top:6px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden}
+.bar i::after{content:"";display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,#b9822d,#f3d27a);transition:width 1.4s cubic-bezier(.2,.8,.2,1) .8s}.on .bar i::after{width:var(--w)}
+.tl{list-style:none;margin-left:6px;border-left:1px solid rgba(231,185,79,.4)}.tl li{position:relative;padding:0 0 16px 22px}
+.tl li::before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(231,185,79,.18)}
+.tl em{font-style:normal;color:var(--gold);font-size:.82rem;letter-spacing:.08em}.tl b{display:block;font-weight:600}.tl span{color:var(--mut);font-size:.92rem}
+.big{display:flex;gap:18px;align-items:center}.big strong{font:600 3rem 'Playfair Display';color:var(--gold);line-height:1}
+.ul{list-style:none}.ul li{position:relative;padding:3px 0 3px 22px}.ul li::before{content:"";position:absolute;left:2px;top:.85em;width:7px;height:7px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+.jobs{list-style:none;margin-top:22px;border-left:1px solid rgba(255,255,255,.25)}
+.tj{position:relative;display:block;width:100%;text-align:left;padding:10px 12px 10px 22px;border-radius:0 12px 12px 0;transition:.3s}
+.tj::before{content:"";position:absolute;left:-6px;top:18px;width:11px;height:11px;border-radius:50%;background:#555;box-shadow:0 0 0 4px rgba(15,19,11,.8);transition:.3s}
+.tj em{display:block;font-style:normal;font-size:.8rem;letter-spacing:.08em;color:var(--mut)}.tj b{display:block;font-weight:600;line-height:1.3;text-shadow:0 2px 10px #000}
+.tj:hover,.tj.on{background:rgba(14,18,10,.6)}.tj.on::before{background:var(--gold);box-shadow:0 0 0 4px rgba(231,185,79,.3)}.tj.on em{color:var(--gold)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin:14px 0 4px;color:var(--mut);font-size:.9rem}.meta b{color:var(--cream);font-weight:500}
+.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px 34px;margin-top:20px}
+.gr h4{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.pj{padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}.pj:first-of-type{border:0}.pj h4{font:600 1.15rem 'Playfair Display';color:#fff;letter-spacing:0;text-transform:none}
+.soon{display:inline-block;margin-top:6px;padding:3px 12px;border-radius:99px;font-size:.78rem;color:var(--mut);border:1px dashed rgba(255,255,255,.3)}
+.fade{animation:fd .6s ease}@keyframes fd{from{opacity:0;transform:translateY(12px)}}
+.bot{position:fixed;inset:auto 0 0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:0 clamp(14px,3vw,40px) calc(18px + env(safe-area-inset-bottom,0px))}
+#count{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);text-shadow:0 2px 10px #000}#count b{color:var(--gold)}
+.ctl{display:flex;gap:10px}.ctl button{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:rgba(14,18,10,.7);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(14px);transition:.3s}.ctl button:hover{color:var(--gold);border-color:var(--gold)}
+@media (max-width:900px){
+ .brand span,.mail{display:none}.brand,.mail{width:auto}.top{justify-content:center}.mail{position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top,0px));display:flex}.brand{position:fixed;left:14px}
+ nav button{padding:9px 12px}nav button span{display:none}nav button.on span{display:inline}
+ .scene{display:block;overflow-y:auto;padding-top:calc(84px + env(safe-area-inset-top,0px))}.panel{max-height:none;overflow:visible;margin-top:22px;padding:22px 20px}
+ .hero{padding-top:6px}.jobs{display:flex;overflow-x:auto;border:0;gap:6px;margin-top:14px}.jobs li{flex:none;width:210px}.tj{border:1px solid rgba(255,255,255,.18);border-radius:14px;background:rgba(14,18,10,.6);padding:10px 14px}.tj::before{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.bg{transform:none}}
+</style>
+</head>
+<body>
+<div class="bgs" id="bgs"></div><div class="scrim"></div>
+<header class="top">
+ <a class="brand" href="#profile" aria-label="Moh Ryan Trisyardi home"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#E7B94F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="14.5"/><path d="M11 23V9.5h6a3.8 3.8 0 010 7.6h-6M17 17.1l5 5.9"/><path d="M20 8c2-2 5-2 6-1-1 2-3 3-6 3" stroke-width="1.2"/></svg><span>Moh Ryan Trisyardi</span></a>
+ <nav id="nav" aria-label="Main menu"></nav><div class="mail" id="mail"></div>
+</header>
+<main id="main"></main>
+<footer class="bot"><div id="count"></div><div class="ctl"><button id="prev" aria-label="Previous menu"></button><button id="next" aria-label="Next menu"></button></div></footer>
+<script>
+/* ===== SETTINGS: edit here ===== */
+const CFG={dim:.5, // 0.3 = lighter overlay, 0.7 = darker (raise it if your image makes text hard to read)
+ imgs:[{f:'menu1',id:'1HPvtWFUIQ_DHLpnEOPi8GVSZGbKsAioZ'},{f:'menu2',id:'1qnJ4RoKKdN-X7_flNZ_xAcUOf8IFvq8q'},{f:'menu3',id:'1sY4AIvYYKLx2seez1mn6pr5aGkUKNBb9'}]};
+/* ===== CV CONTENT: edit here ===== */
+const D={name:'Moh Ryan Trisyardi',title:'Professional Accountant',email:'ryan.trisyardi@yahoo.com',
+tag:'Finance, accounting and tax professional with a passion for business systems and AI-assisted analysis.',
+motto:'Great Motivation and Great Faith are the ways to be a super-capabilities-man',
+about:'Reliable as a Finance and Accounting partner possessing knowledge of Accounting standards. Offering 6 years of comprehensive experiences in the distribution sector corp., and still starving for manufacturing industry experiences in Finance Accounting, or/and Tax. Was born in Majalengka, growing excellent career at Bandung-Jakarta, a father of a saucy baby, always balancing IES-Q, create a challenging & productive working environment mixed with enjoyable situation is must.',
+facts:[['pin','Based in','Cimahi, Jawa Barat'],['user','Born in','Majalengka'],['globe','Languages','English · Indonesia + Sunda'],['mail','Email','ryan.trisyardi@yahoo.com']],
+skills:['Accounting Lifecycle + Analyzing','Forecasting Income Statement + Cash Flow','AR Specialist','Corporation Taxation'],
+soft:[['Accurate Online',82],['Access, Visio, Outlook',78],['MS Excel, MS Word, PowerPoint',92]],
+lect:['Database Management System — Regular and Extension Class','Pengantar Teknologi Informasi — Regular Class','Accounting Information System 1 + 2 — Regular and Extension Class','Analisis Perancangan Sistem — Regular and Extension Class'],
+org:[['2015','Himpunan Mahasiswa Akuntansi','Elected as Head of Education Department'],['2015','Accounting Competition · Universitas POS Indonesia','Participant'],['2013 & 2014','Accounting Competition · Universitas Widyatama','Participant']],
+certs:[['2022','Brevet A & B','Tac Tic Tax, Bandung'],['2017','Microsoft Office Specialist','Excel (R) 2016 · verify.certiport.com · code sob2-XMYn'],['2012','Juara Umum 1','SMA PGRI 1 Majalengka']],
+jobs:[
+{p:'2022 – Present',s:'PT. Indonesia Broadband Communications',c:'PT. Indonesia Broadband Communications',r:'Accounting',m:[['Sector','Internet Service Provider'],['Brands','Megavision, Starnet, Corpnet'],['Location','Bandung'],['Scope','4 subsidiary companies']],g:[
+ ['Reporting & analysis',['Prepare and review Financial Statement Reporting for four subsidiary companies.','Analyze Financial Statements and provide insights to support management decision-making.']],
+ ['Supervision',['Supervise and monitor daily accounting activities of 6 Accounting Staff at Headquarters and 10 Accounting Staff across each City Branch.','Including supervision of Opex and Capex Recognition, Revenue Recognition, Bank Reconciliation and Asset Management.']],
+ ['Tax control and equalization',['Tax Unification.','Value Added Tax (VAT).','Corporate Income Tax Estimation.']],
+ ['Audit & team',['Prepare external audit data, coordinate with auditors, and follow up on outstanding and pending audit matters.','Support recruitment and accounting team expansion for new branches: candidate screening, technical tests and interviews.']]]},
+{p:'2019 – 2022',s:'PT. Distribusi Telekomunikasi Indonesia',c:'PT. Distribusi Telekomunikasi Indonesia',r:'Finance Accounting Supervisor',m:[['Sector','Retail Business'],['Brand','Smartfren'],['Location','Bandung']],g:[
+ ['Accounting',['Prepared and analyzed Financial Statements.','Prepared Income Statement forecasts and budgeting projections.','Maintained and controlled corporate taxation in coordination with tax consultants.','Conducted Inventory and Cash Opname.']],
+ ['Finance',['Controlled Accounts Receivable (AR), Accounts Payable (AP), Petty Cash and Bank activities.','Supervised and controlled the Administration Sales Team, Warehouse/Inventory Team, Couriers and Sales Personnel.','Analyzed monthly sales turnover and business performance.','Developed, improved and optimized accounting, financial and administrative processes to support business needs and strengthen internal controls.']]]},
+{p:'2018 – 2019',s:'PT. Buana Citra Abadi',c:'PT. Buana Citra Abadi — Muncul Group',r:'Finance Accounting Branch',m:[['Sector','Distribution (Sales & Rent)'],['Product','Copy Machine'],['Location','Bandung']],g:[
+ ['Accounting',['Prepare All Financial Statements.','Maintain taxation with Tax Controller from HO Yogyakarta.','Stock Opname Machine & Sparepart.']],
+ ['Financial',['Create budget operation.','Execute marketing commission.','Maintain AR, Petty Cash, Bank.','Maintain Asset and General Affair.']]]},
+{p:'2016 – 2018',s:'PT. Erafone Artha Retailindo',c:'PT. Erafone Artha Retailindo — Erajaya Group, Tbk.',r:'Finance AR Supervisor',m:[['Sector','Retail Business'],['Product','Multibrand Smartphone + Accessories'],['Location','West Jakarta']],g:[
+ ['AR Retail',['Maintain AR Retail.','Create KPI Store.']],['Bank Reconciliation',['Prepare and Reconcile Bank Mutation.','Create KPI AR Retail Staff.']],
+ ['AR Promo — Supervisor',['Maintain Team Finance AR Promo.','Maintain Program Promo (Including Claim).','Create KPI Store.']],
+ ['Other responsibilities / projects',['Analyzing Auto Settlement (Support Assistant Manager Project).','Guide Finance AR Retail from EIN (Era Int. Network — Singapore).','Analyzing Man Power Finance AR Retail, Promo, and Joint Business.']]]},
+{p:'2016',s:'Motekar Consulting',c:'Motekar Consulting',r:'Accounting Consultant Staff',m:[['Field','Accounting Consultant'],['Project location','Kuningan, Jawa Barat'],['Office','Bandung']],g:[
+ ['Projects',['Repair Accounting Method — Hotel Grand Purnama, Kuningan.','Mentoring Team Finance Accounting — Hotel Grand Purnama, Kuningan.']]]}],
+ind:[['Tax Cleanup — Telecommunications Distributor','Helped organize the tax administration and resolve tax issues of a telecommunications distributor company.'],
+['ERP Application Development','Developing an ERP application for business needs: accounting, HRIS, inventory, purchasing, cash and bank, fixed assets and other business modules. The manufacturing module is still in development.'],
+['Financial Statement Analytical Dashboard','A dashboard for analyzing company financial statements, with AI-based analysis features that help read the data and give insights.'],
+['Accounting Quizzes & Tax Learning Materials','Accounting quizzes and tax learning materials.']]};
+/* ===== ICONS (custom SVG, no emoji) ===== */
+const P={user:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>',cap:'<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/>',case:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"/>',pin:'<path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18M12 3c-3 3.5-3 14 0 18"/>',award:'<circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/>',arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',back:'<path d="M19 12H5M11 6l-6 6 6 6"/>',spark:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 17v4M17 19h4"/>',chart:'<path d="M4 20V4M4 20h16M8 16v-5M13 16V8M18 16v-3"/>',users:'<circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.6 3-6 7-6s7 2.4 7 6M16 4.6a3.5 3.5 0 010 6.8M18 14c2.6.6 4 2.5 4 6"/>',book:'<path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 21V5"/>',leaf:'<path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/>'};
+const I=(n,s=20)=>`<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n]}</svg>`;
+const ORN='<svg width="150" height="22" viewBox="0 0 150 22" fill="none" stroke="#E7B94F" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M2 11h58M90 11h58"/><path d="M75 19V8M75 13c-5 0-8-3-8-7 5 0 8 3 8 7zM75 13c5 0 8-3 8-7-5 0-8 3-8 7z"/></svg>';
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const ul=a=>`<ul class="ul">${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const rv=(i,h,t='div')=>`<${t} class="rv" style="--i:${i}">${h}</${t}>`;
+/* ===== SCENES ===== */
+const S=[
+`<section class="scene s0" aria-label="Profile"><div class="hero">
+ ${rv(0,'Personal portfolio','p').replace('class="rv"','class="rv lbl"')}
+ <h1 class="rv" style="--i:1">Moh Ryan<br>Trisyardi</h1>
+ ${rv(2,D.title,'p').replace('class="rv"','class="rv ttl"')}
+ <div class="rv" style="--i:3;margin:14px 0">${ORN}</div>
+ <p class="rv tag" style="--i:4">${D.tag}</p>
+ <blockquote class="rv quote" style="--i:5">“${D.motto}”</blockquote>
+ <button class="rv cta" style="--i:6" onclick="go(1)">Explore my background ${I('arrow')}</button></div>
+ <div class="panel rv" style="--i:3" tabindex="0" aria-label="About me">
+  <section><h3>${I('user',18)}About me</h3><p>${D.about}</p></section>
+  <section><ul class="facts">${D.facts.map(f=>`<li>${I(f[0])}<div><small>${f[1]}</small>${f[0]=='mail'?`<a href="mailto:${f[2]}">${f[2]}</a>`:f[2]}</div></li>`).join('')}</ul></section>
+  <section><h3>${I('chart',18)}Core skills</h3><ul class="chips">${D.skills.map(s=>`<li>${s}</li>`).join('')}</ul></section>
+  <section><h3>${I('leaf',18)}Software</h3>${D.soft.map(s=>`<div class="bar" style="--w:${s[1]}%"><div><span>${s[0]}</span><b>${s[1]}%</b></div><i></i></div>`).join('')}</section>
+ </div></section>`,
+`<section class="scene s1" aria-label="Background"><div class="hero">
+ <p class="rv lbl" style="--i:0">Menu 02</p><h2 class="rv" style="--i:1">My Background</h2>
+ <p class="rv ttl" style="--i:2">Education · Achievements · Credentials</p>
+ <div class="rv stats" style="--i:3"><div><b>3.89</b><small>GPA, S1 Accounting</small></div><div><b>4</b><small>Subjects as assistant lecturer</small></div><div><b>3</b><small>Certificates & achievements</small></div></div>
+ <button class="rv cta" style="--i:4" onclick="go(2)">See my experience ${I('arrow')}</button></div>
+ <div class="panel rv" style="--i:3" tabindex="0" aria-label="Education and credentials">
+  <section><h3>${I('cap',18)}Education</h3><div class="big"><strong>3.89</strong><div><b>Universitas Jenderal Achmad Yani</b><br><span class="gold">Bachelor Degree · S1 Akuntansi</span><br><small>2012 – 2016 · GPA 3.89</small></div></div>
+   <ul class="tl" style="margin-top:16px"><li><em>High school · 2012</em><b>SMA PGRI 1 Majalengka</b><span>Juara Umum 1</span></li></ul></section>
+  <section><h3>${I('book',18)}Assistant lecturer</h3><p style="margin-bottom:8px">Qualified as Assistant Lecturer for subjects:</p>${ul(D.lect)}</section>
+  <section><h3>${I('users',18)}Organization & competitions</h3><ul class="tl">${D.org.map(o=>`<li><em>${o[0]}</em><b>${o[1]}</b><span>${o[2]}</span></li>`).join('')}</ul></section>
+  <section><h3>${I('award',18)}Certificates & achievements</h3><ul class="tl">${D.certs.map(o=>`<li><em>${o[0]}</em><b>${o[1]}</b><span>${o[2]}</span></li>`).join('')}</ul></section>
+ </div></section>`,
+`<section class="scene s2" aria-label="Experience"><div class="hero">
+ <p class="rv lbl" style="--i:0">Menu 03</p><h2 class="rv" style="--i:1">My Professional Journey</h2>
+ <p class="rv" style="--i:2;color:#efe6cf;text-shadow:0 2px 12px #000">Select a position to read the details.</p>
+ <ul class="jobs rv" style="--i:3" id="jobs">${D.jobs.map((j,k)=>`<li><button class="tj" data-j="${k}"><em>${j.p}</em><b>${j.s}</b></button></li>`).join('')}<li><button class="tj" data-j="${D.jobs.length}"><em>Independent</em><b>Freelance & personal projects</b></button></li></ul></div>
+ <div class="panel rv" style="--i:3;justify-self:end;width:100%;max-width:820px" id="jd" tabindex="0" aria-live="polite"></div></section>`];
+function job(k){const el=$('#jd');$$('.tj').forEach(b=>{const on=+b.dataset.j===k;b.classList.toggle('on',on);b.setAttribute('aria-current',on)});
+ if(k>=D.jobs.length){el.innerHTML=`<div class="fade"><p class="lbl">${I('spark',16)} Independent</p><h2 style="font-size:2rem">Freelance & personal projects</h2>${D.ind.map(p=>`<div class="pj"><h4>${p[0]}</h4><p>${p[1]}</p><span class="soon">Link coming soon</span></div>`).join('')}</div>`}
+ else{const j=D.jobs[k];el.innerHTML=`<div class="fade"><p class="lbl">${j.p}</p><h2 style="font-size:2rem">${j.c}</h2><p class="gold" style="font-weight:600;font-size:1.1rem">${j.r}</p>
+ <div class="meta">${j.m.map(m=>`<span>${m[0]}: <b>${m[1]}</b></span>`).join('')}</div><div class="gr">${j.g.map(g=>`<div><h4>${g[0]}</h4>${ul(g[1])}</div>`).join('')}</div></div>`}el.scrollTop=0}
+/* ===== ENGINE ===== */
+const names=['Profile','Background','Experience'],ic=['user','cap','case'],keys=['profile','background','experience'];let cur=-1;
+$('#main').innerHTML=S.join('');
+$('#nav').innerHTML=names.map((n,i)=>`<button data-i="${i}">${I(ic[i],18)}<span>${n}</span></button>`).join('');
+$('#mail').innerHTML=`<a href="mailto:${D.email}" aria-label="Send email">${I('mail',18)}</a>`;
+$('#prev').innerHTML=I('back');$('#next').innerHTML=I('arrow');
+$('#bgs').innerHTML=CFG.imgs.map(()=>'<div class="bg"></div>').join('');
+document.documentElement.style.setProperty('--dim',CFG.dim);
+/* images: local file first (images/menu1.jpg ...), then Google Drive */
+CFG.imgs.forEach((m,i)=>{const c=['jpg','jpeg','png','webp'].map(e=>`images/${m.f}.${e}`).concat(`https://lh3.googleusercontent.com/d/${m.id}=w2400`),el=$$('.bg')[i];
+ (function t(n){if(n>=c.length)return;const im=new Image();im.onload=()=>el.style.backgroundImage=`url("${c[n]}")`;im.onerror=()=>t(n+1);im.src=c[n]})(0)});
+function go(i){i=(i+3)%3;if(i===cur)return;cur=i;
+ $$('.scene').forEach((s,k)=>{s.classList.toggle('on',k===i);if(k===i){s.scrollTop=0;$$('.panel',s).forEach(p=>p.scrollTop=0)}});
+ $$('.bg').forEach((b,k)=>b.classList.toggle('on',k===i));
+ $$('#nav button').forEach((b,k)=>{b.classList.toggle('on',k===i);b.setAttribute('aria-current',k===i)});
+ $('#count').innerHTML=`<b>0${i+1}</b> / 03 &nbsp; ${names[i]}`;history.replaceState(null,'','#'+keys[i]);document.title=names[i]+' — '+D.name}
+$('#nav').onclick=e=>{const b=e.target.closest('button');if(b)go(+b.dataset.i)};
+$('#prev').onclick=()=>go(cur-1);$('#next').onclick=()=>go(cur+1);
+$('#jobs').onclick=e=>{const b=e.target.closest('.tj');if(b)job(+b.dataset.j)};
+document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea'))return;if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)});
+let tx=0,ty=0;addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*2&&!e.target.closest('#jobs'))go(cur+(dx<0?1:-1))},{passive:true});
+if(matchMedia('(hover:hover)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches)addEventListener('mousemove',e=>{const b=$('#bgs').style;b.setProperty('--px',(e.clientX/innerWidth-.5)*-18+'px');b.setProperty('--py',(e.clientY/innerHeight-.5)*-12+'px')});
+job(0);go(Math.max(0,keys.indexOf(location.hash.slice(1))));
+</script>
+</body>
+</html>

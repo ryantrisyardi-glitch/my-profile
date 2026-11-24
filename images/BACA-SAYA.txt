@@ -1,0 +1,7 @@
+Letakkan 3 gambar background di folder ini dengan nama:
+  menu1.jpg  (Profile)
+  menu2.jpg  (Background)
+  menu3.jpg  (Experience)
+Format boleh .jpg .jpeg .png atau .webp (nama file tetap menu1 / menu2 / menu3).
+Jika folder ini kosong, website mencoba mengambil gambar dari Google Drive
+(file Drive harus dibagikan: "Siapa saja yang memiliki link").
