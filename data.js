@@ -4,11 +4,16 @@
    ===================================================================== */
 
 const CFG={
-  dim:.5, // kegelapan lapisan di atas gambar: .3 = lebih terang, .7 = lebih gelap
-  imgs:[ // gambar latar menu 1, 2, 3 (taruh file di folder images/ dengan nama menu1, menu2, menu3)
-    {f:'menu1',id:'1HPvtWFUIQ_DHLpnEOPi8GVSZGbKsAioZ'},
-    {f:'menu2',id:'1qnJ4RoKKdN-X7_flNZ_xAcUOf8IFvq8q'},
-    {f:'menu3',id:'1sY4AIvYYKLx2seez1mn6pr5aGkUKNBb9'}]
+  dim:.5,        // kegelapan lapisan di atas gambar: .3 = lebih terang, .7 = lebih gelap
+  fit:'contain',   // 'cover'   = gambar memenuhi layar (sisi yang berlebih terpotong, terkesan lebih zoom)
+                 // 'contain' = seluruh gambar terlihat utuh (bisa ada bidang kosong di tepi)
+  zoom:true,     // true = gambar bergerak zoom pelan saat berganti menu. false = diam, tidak ada zoom
+  imgs:[         // gambar latar menu 1, 2, 3 (taruh file di folder images/ dengan nama menu1, menu2, menu3)
+    // pos = bagian gambar yang dipertahankan saat terpotong. Contoh: 'center', 'left center', 'right center',
+    //       'center top', 'center bottom', atau persen '30% 50%'. fit (opsional) = mengganti pengaturan fit di atas.
+    {f:'menu1',pos:'center',id:'1HPvtWFUIQ_DHLpnEOPi8GVSZGbKsAioZ'},
+    {f:'menu2',pos:'center',id:'1qnJ4RoKKdN-X7_flNZ_xAcUOf8IFvq8q'},
+    {f:'menu3',pos:'center',id:'1sY4AIvYYKLx2seez1mn6pr5aGkUKNBb9'}]
 };
 
 const D={
