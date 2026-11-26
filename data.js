@@ -11,9 +11,9 @@ const CFG={
   imgs:[         // gambar latar menu 1, 2, 3 (taruh file di folder images/ dengan nama menu1, menu2, menu3)
     // pos = bagian gambar yang dipertahankan saat terpotong. Contoh: 'center', 'left center', 'right center',
     //       'center top', 'center bottom', atau persen '30% 50%'. fit (opsional) = mengganti pengaturan fit di atas.
-    {f:'menu1',pos:'center',id:'1B1zW3CYWJPuaZFT2sdtmAwj5U2LGJXTz'},
-    {f:'menu2',pos:'center',id:'1qnJ4RoKKdN-X7_flNZ_xAcUOf8IFvq8q'},
-    {f:'menu3',pos:'center',id:'1sY4AIvYYKLx2seez1mn6pr5aGkUKNBb9'}]
+    {f:'menu1',pos:'center',id:''},
+    {f:'menu2',pos:'center',id:''},
+    {f:'menu3',pos:'center',id:''}]
 };
 
 const D={
