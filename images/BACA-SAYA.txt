@@ -1,7 +1,0 @@
-Letakkan gambar background di folder ini dengan nama:
-  menu1.jpg  (Profile)      menu2.jpg  (Background)   menu3.jpg  (Experience)
-  menu4.jpg  (Portfolio)    menu5.jpg  (Contact)
-Format boleh .jpg .jpeg .png atau .webp.
-Jika menu4 / menu5 belum ada, website memakai gambar menu1 / menu2 sementara.
-Jika folder kosong, website mencoba mengambil gambar dari Google Drive
-(ID file diisi di tab Pengaturan pada Google Sheet; file Drive harus dibagikan "Siapa saja yang memiliki link").
