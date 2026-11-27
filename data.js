@@ -545,7 +545,7 @@ const FALLBACK={
 },
 {
 "kunci": "fit",
-"isi": "cover",
+"isi": "contain",
 "petunjuk": "cover = gambar memenuhi layar (terpotong); contain = gambar utuh"
 },
 {
